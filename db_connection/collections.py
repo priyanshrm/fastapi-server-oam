@@ -5,4 +5,7 @@ CONNECTION_STR =  "mongodb+srv://priyanshmahendra:8OUaa5MDTILL8KXc@cluster1.0aj9
 client = MongoClient(CONNECTION_STR, tlsCAFile=certifi.where())
 # client = MongoClient("mongodb://localhost:27017")
 db = client["social_media"]
-userCollection = db["users"]
+images_db = client["test_db"]
+artistsCollection = db["artists"]
+collectorCollection = db["collectors"]
+encodingCollection = db["encodings"]
