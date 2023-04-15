@@ -11,3 +11,8 @@ class LoginUser(BaseModel):
     username: str
     password: str
 
+class PostModel(BaseModel):
+    title: str
+    desc: str
+    file_id: str
+
